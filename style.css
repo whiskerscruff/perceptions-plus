@@ -1,0 +1,440 @@
+/* General Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background:  linear-gradient(to right, #2c3e50, #16a085, #559);
+    line-height: 1.6;
+}
+
+/* Header (Navigation) */
+header {
+  /* Three-color gradient */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background 0.3s ease; /* Smooth transition for background */
+}
+
+header.transparent {
+    background: rgba(44, 62, 80, 0.3); /* Semi-transparent version of the gradient */
+}
+
+header .logo h1 {
+    font-size: 28px;
+    background-color: rgba(243, 156, 153, 0.75); /* Soft pastel pink with slight transparency */
+    color: white; /* White text color for contrast */
+    border-radius: 110px; /* Rounded corners for a more elegant shape */
+    padding: 0px 70px; /* Increased padding for a more spacious, refined look */
+    text-transform: uppercase; /* Optional: Uppercase for a more professional appearance */
+    font-weight: bold; /* Bold text to stand out */
+
+    /* Text Glow Effect */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.57), 0 0 16px rgba(255, 255, 255, 0.05), 0 0 24px rgba(255, 255, 255, 0.05); /* Soft white glow around text */
+
+
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+/* Hover Effect */
+header .logo h1:hover {
+    background-color: rgba(179, 156, 219, 0.75); /* Muted pastel purple on hover */
+    text-shadow: 0 0 12px rgba(255, 255, 255, 0.8), 0 0 20px rgba(255, 255, 255, 0.6), 0 0 30px rgba(255, 255, 255, 0.4); /* Stronger glow effect on hover */
+    transform: scale(1.05); /* Slightly enlarge the logo for an interactive feel */
+
+}
+
+
+/* Navigation links */
+header nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: white;
+    font-size: 18px;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+   padding: 3px 10px;
+    transition: background-color 0.9s ease;
+    text-decoration: none;
+}
+
+header nav ul li a:hover {
+    background-color: #f39c99;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg'); /* Replace with your hero image */
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0;
+    text-align: center;
+    color: white;    padding: 0px 0;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+  color: white;   padding: 90px 0;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.57), 0 0 16px rgba(255, 255, 255, 0.05), 0 0 24px rgba(255, 255, 255, 0.05); /* Soft white glow around text */
+
+
+
+}
+.hero-text h4 {font-size: 25px;
+    font-weight: 900;
+  margin-bottom: 60px;
+    }
+
+.hero-text p {
+    font-size: 50px;
+    margin-bottom: 30px;
+}
+.cta-btn {
+    padding: 15px 30px;
+    background-color: white; /* Original button color */
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover effect */
+.cta-btn:hover {
+    background-color: #f39c99; /* Muted pastel purple */
+    transform: translateY(-4px); /* 3D effect: button lifts up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover for depth */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Glow effect around text */
+}
+
+/* Optional: Focus style for accessibility */
+ 0.7); /* Focus outline with glow */
+}
+
+
+
+/* Hero Section */
+.hero {
+    background-image: url('images/hero-bg.jpg'); /* Replace with your hero image */
+    background-size: left;
+    background-position: center;
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
+
+.hero-text h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.hero-text p {
+    font-size: 22px;
+    margin-bottom: 3px;
+}
+
+.cta-btn {
+    padding: 15px 30px;
+    background-color: #B39DDB
+;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #f39c99;
+}
+
+
+/* About Section */
+.about {
+    padding: 100px 20px;
+     background:  linear-gradient(to right, #2c3e50, #16a085, #559);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 30px;
+  color: white;
+}
+
+.about-text h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  color: white; text-shadow: 0 0 8px rgba(255, 255, 255, 0.57), 0 0 16px rgba(255, 255, 255, 0.05), 0 0 24px rgba(255, 255, 255, 0.05); /* Soft white glow around text */
+
+    /* Elegant Shadow */
+
+;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+  color: white;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Services Section */
+.services {
+    padding: 0px 0px;
+    background: linear-gradient(to right, #2c3e50, #16a085, #559);
+    text-align: left;
+}
+
+.services h2 {
+    font-size: 46px;
+    margin-bottom: 0px;
+    color: white;  text-shadow: 0 0 8px rgba(255, 255, 255, 0.57), 0 0 16px rgba(255, 255, 255, 0.05), 0 0 24px rgba(255, 255, 255, 0.05); /* Soft white glow around text */
+
+
+}
+
+.service-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.service-card {
+    background-color: #E1E1E1;
+    padding: 40px;
+    width: 250px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Hover effect for the first card */
+.service-card:nth-child(1):hover {
+    transform: translateY(-10px);
+    background-color: #f39c99;  /* Light Blue */
+}
+
+/* Hover effect for the second card */
+.service-card:nth-child(2):hover {
+    transform: translateY(-10px);
+    background-color: #8C7B5A;  /* Red */
+}
+
+/* Hover effect for the third card */
+.service-card:nth-child(3):hover {
+    transform: translateY(-10px);
+    background-color: #B39DDB
+;  /* Green */
+}
+
+/* Hover effect for the fourth card */
+.service-card:nth-child(4):hover {
+    transform: translateY(-10px);
+    background-color: #6D7F8D;  /* Yellow */
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: black;
+}
+
+.service-card p {
+    font-size: 19px;
+    color: black;
+}
+
+
+/* Gallery Section */
+.gallery {
+    padding: 100px 20px;
+    background:  linear-gradient(to right, #2c3e50, #16a085, #559);
+    text-align: left;
+}
+
+.gallery h2 {
+    font-size: 46px;
+    margin-bottom: 50px;
+  color: white;  text-shadow: 0 0 8px rgba(255, 255, 255, 0.57), 0 0 16px rgba(255, 255, 255, 0.05), 0 0 24px rgba(255, 255, 255, 0.05); /* Soft white glow around text */
+
+
+
+
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+.hero {font-size: 36px;
+    margin-bottom: 0px;
+  color: white;
+/* Contact Section */
+.contact {
+    padding: 0px 0px;
+    background: linear-gradient(to right, #2c3e50, #16a085, #559);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 0px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.57), 0 0 16px rgba(255, 255, 255, 0.05), 0 0 24px rgba(255, 255, 255, 0.05); /* Soft white glow around text */
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    color: white;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+/* Style for form rows (2 columns layout) */
+.form-row {
+    display: flex;
+    gap: 30px;
+    width: 100%;
+}
+
+.form-row .form-field {
+    flex: 1;
+}
+
+  /* General styling for inputs, textareas, and selects */
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: 5px solid white;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Styling for the button */
+.contact-form button {
+    padding: 15px 30px;
+    background-color: #B39DDB; /* Muted Pastel Purple */
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, text-shadow 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Hover effect for button */
+.contact-form button:hover {
+    background-color: #f39c99; /* Soft pastel pink on hover */
+    transform: translateY(-4px); /* 3D effect: button lifts up */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover for depth */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.6); /* Glow effect around text */
+}
+
+/* Focus style for button for accessibility */
+.contact-form button:focus {
+    outline: none;
+    box-shadow: 0 0 10px 2px rgba(112, 0, 255, 0.7); /* Focus outline with glow */
+}
+
+/* Optional: Adjust the layout for smaller screens */
+@media screen and (max-width: 768px) {
+    .contact-form {
+        padding: 20px;
+    }
+
+    .contact-form input,
+    .contact-form select,
+    .contact-form textarea {
+        font-size: 16px;
+    }
+
+    .contact-form button {
+        padding: 12px 25px;
+    }
+
+    /* Stack form fields in a single column on smaller screens */
+    .form-row {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+
+/* Footer Section */
+footer {
+    background-color: ;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}

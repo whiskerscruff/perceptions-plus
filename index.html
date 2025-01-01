@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your local painting company for residential and small commercial jobs. High-quality, affordable services.">
+    <meta name="author" content="Your Name">
+    <title>Your Painting Company Name</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <div class="logo">
+            <h1>Perceptions Plus</h1> <!-- Change this to your company name -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h2>Your Trusted Local Painter</h2>
+            <p>providing high-quality painting services for homes and small businesses. </p>
+          <h4> Affordable, reliable, and always on time. </h4>
+          
+            <a href="#contact" class="cta-btn">Get a Free Estimate</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-text">
+                <h2>about</h2> <h2>_____________</h2>
+                <p>Perceptions Plus is a local painting business with a passion for perfection. With years of experience, we specialize in residential and small commercial painting projects. Our goal is to transform your spaces with vibrant, lasting colors and exceptional craftsmanship.</p>
+            </div>
+            <div class="about-text">
+               <h2>contact</h2> <h2>_____________</h2>
+                <p>Perceptions Plus design LLC</p> <p>508-210-6873</p>  <p>Barre, MA</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Services</h2> <h2>_____________</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <h3>Interior Painting</h3>
+                <p>Transform your home with fresh, vibrant colors that bring new life to your space.</p>
+            </div>
+            <div class="service-card">
+                <h3>Exterior Painting</h3>
+                <p>Boost curb appeal with a high-quality exterior paint job that lasts for years.</p>
+            </div>
+            <div class="service-card">
+                <h3>Cabinet Refinishing</h3>
+                <p>Update your kitchen or bathroom with beautifully refinished cabinets that look brand new.</p>
+            </div>
+            <div class="service-card">
+                <h3>Pressure Washing</h3>
+                <p>Deep clean your surfaces to prepare for painting or just restore the beauty of your exteriors.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <h2>gallery</h2> <h2>_____________</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="images/project1.jpg" alt="Painting Project 1"> <!-- Replace with your image -->
+            </div>
+            <div class="gallery-item">
+                <img src="images/project2.jpg" alt="Painting Project 2"> <!-- Replace with your image -->
+            </div>
+            <div class="gallery-item">
+                <img src="images/project3.jpg" alt="Painting Project 3"> <!-- Replace with your image -->
+            </div>
+        </div>
+    </section>
+  <div>
+ <section id="gallery" class="gallery">
+        <h2>contact us</h2> <h2>_____________</h2>
+    <section id="contact" class="contact">
+    <div class="container">
+
+        <form action="mailto:youremail@example.com" method="get" class="contact-form">
+            <div class="form-row">
+                <!-- Name Field -->
+                <div class="form-field">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+
+                <!-- Email Field -->
+                <div class="form-field">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <!-- Phone Number Field -->
+                <div class="form-field">
+                    <label for="phone">Your Phone Number</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+                </div>
+
+                <!-- Message Field -->
+                <div class="form-field">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Tell us about your project" required></textarea>
+                </div>
+            </div>
+
+            <div class="form-row dropdowns">
+                <!-- Residential or Commercial Dropdown -->
+                <div class="form-field">
+                    <label for="property-type">Property Type</label>
+                    <select id="property-type" name="property-type" required>
+                        <option value="" disabled selected>Select property type</option>
+                        <option value="residential">Residential</option>
+                        <option value="commercial">Commercial</option>
+                    </select>
+                </div>
+
+                <!-- Job Size Dropdown -->
+                <div class="form-field">
+                    <label for="job-size">Job Size</label>
+                    <select id="job-size" name="job-size" required>
+                        <option value="" disabled selected>Select job size</option>
+                        <option value="small">Small</option>
+                        <option value="medium">Medium</option>
+                        <option value="large">Large</option>
+                        <option value="unsure">Unsure</option>
+                    </select>
+                </div>
+
+                <!-- How Soon to Start Dropdown -->
+                <div class="form-field">
+                    <label for="start-time">How Soon to Start</label>
+                    <select id="start-time" name="start-time" required>
+                        <option value="" disabled selected>Select time frame</option>
+                        <option value="week">Within a Week</option>
+                        <option value="few-weeks">A Few Weeks</option>
+                        <option value="month">A Month</option>
+                        <option value="few-months">A Few Months</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <button type="submit">Contact</button>
+        </form>
+    </div>
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p> 2024 Perceptions Plus Design LLC | All Rights Reserved</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
